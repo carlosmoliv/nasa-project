@@ -1,0 +1,15 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd server && yarn dev",
+    "client": "cd client && yarn start",
+    "deploy": "cd client & yarn build & cd .. & cd server && yarn start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
