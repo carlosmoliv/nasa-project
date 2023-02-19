@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-
 import { httpGetPlanets } from "./requests";
 
 function usePlanets() {
@@ -7,7 +6,6 @@ function usePlanets() {
 
   const getPlanets = useCallback(async () => {
     const fetchedPlanets = await httpGetPlanets();
-    console.log(fetchedPlanets);
     savePlanets(fetchedPlanets);
   }, []);
 

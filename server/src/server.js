@@ -1,7 +1,7 @@
 import http from "http";
 
 import app from "./app.js";
-import { habitablePlanets, loadPlanetsData } from "./models/planets.model.js";
+import { loadPlanetsData } from "./models/planets.model.js";
 
 const PORT = process.env.PORT | 4000;
 const server = http.createServer(app);
