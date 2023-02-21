@@ -6,9 +6,11 @@
   "scripts": {
     "server": "cd server && yarn dev",
     "client": "cd client && yarn start",
-    "deploy": "cd client & yarn build & cd .. & cd server && yarn start"
+    "deploy": "cd client && yarn build && cd .. && cd server && yarn start",
+    "deploy-cluster": "cd client && yarn build && cd .. && cd server && yarn cluster"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
