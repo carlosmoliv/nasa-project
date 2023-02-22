@@ -5,9 +5,9 @@ import {
   httpAbortLaunch,
 } from "./launches.controller.js";
 
-const planetsRouter = express.Router();
-planetsRouter.get("/", httpGetAllLaunches);
-planetsRouter.post("/", httpAddNewLaunch);
-planetsRouter.delete("/:id", httpAbortLaunch);
+const launchesRouter = express.Router();
+launchesRouter.get("/", httpGetAllLaunches);
+launchesRouter.post("/", httpAddNewLaunch);
+launchesRouter.delete("/:id", httpAbortLaunch);
 
-export default planetsRouter;
+export default launchesRouter;
