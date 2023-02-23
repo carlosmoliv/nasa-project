@@ -9,8 +9,12 @@ const launchesSchema = new mongoose.Schema({
     type: Date,
     required: true,
   },
+  mission: {
+    type: String,
+    required: true,
+  },
   rocket: {
-    type: Strings,
+    type: String,
     required: true,
   },
   target: {

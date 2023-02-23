@@ -9,9 +9,11 @@ async function httpGetPlanets() {
 async function httpGetLaunches() {
   return fetch(`${API_URL}/launches`)
     .then((response) => response.json())
-    .then((launches) =>
-      launches.sort((a, b) => a.flightNumber - b.flightNumber)
-    );
+    .then((launches) => {
+      console.log(launches);
+
+      return launches.sort((a, b) => a.flightNumber - b.flightNumber);
+    });
 }
 
 async function httpSubmitLaunch(launch) {
